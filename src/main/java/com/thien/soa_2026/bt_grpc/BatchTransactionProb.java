@@ -20,7 +20,7 @@ import io.grpc.ManagedChannelBuilder;
 import java.util.*;
 
 public class BatchTransactionProb {
-    
+    /*
     public static void main(String[] args) throws Exception{
         String sCode = "B22DCCN827";
         String qCode = "8CLf3vs9";
@@ -88,7 +88,7 @@ public class BatchTransactionProb {
         System.out.println(">>>>>>>> " + subRes);
         
     }
-    
+    */
 }
 
 /*

@@ -18,6 +18,7 @@ import GRPC.*;
 
 public class TagTikcetProb {
     
+    /*
     public static void main(String[] args) {
         String sCode = "B22DCCN827";
         String qCode = "mYP6gDJr";
@@ -74,4 +75,17 @@ public class TagTikcetProb {
         TypedSubmitResponse subRes = stub.submitTyped(subReq);
         System.out.println(">>>>>> " + subRes);
     }
+    */
 }
+/*
+Nội dung
+Gắn tag ticket hỗ trợ qua gRPC typed proto
+Phase 1 nhận TextBatchData với mode=ticket_tags và danh sách entries.
+
+Yêu cầu xử lý
+Đếm số entry chứa từng keyword: account, payment, refund, shipping.
+counts: map từ keyword xuất hiện sang số lần xuất hiện.
+values: danh sách các keyword xuất hiện, sắp xếp tăng dần theo alphabet.
+Submit
+Gọi SubmitTyped với TextBatchAnswer gồm values và counts.
+*/

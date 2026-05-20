@@ -17,7 +17,7 @@ import GRPC.*;
 
 public class SensorTelemetryProb {
     
-    
+    /*
     public static void main(String[] args) throws Exception{
         String sCode = "B22DCCN827";
         String qCode = "w0pAnm7a";
@@ -83,7 +83,7 @@ public class SensorTelemetryProb {
         System.out.println(">>>>>> " + subRes);
 
     }   
-    
+    */
 }
 
 /*

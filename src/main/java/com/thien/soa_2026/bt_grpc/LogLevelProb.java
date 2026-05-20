@@ -17,7 +17,7 @@ import io.grpc.*;
 import GRPC.*;
 
 public class LogLevelProb {
-    
+    /*
     public static void main(String[] args) throws Exception{
         String sCode = "B22DCCN827";
         String qCode = "NFNvCeah";
@@ -76,6 +76,7 @@ public class LogLevelProb {
         TypedSubmitResponse sRes = stub.submitTyped(sReq);
         System.out.println(">>>>> " + sRes);
     }
+    */
 }
 
 /*

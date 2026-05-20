@@ -17,6 +17,7 @@ import GRPC.*;
 
 public class ShippingPriceProb {
     
+    /*
     public static void main(String[] args) throws Exception{
         String sCode = "B22DCCN827";
         String qCode = "ClaMyPgd";
@@ -82,6 +83,7 @@ public class ShippingPriceProb {
         System.out.println(">>>>>>>> " + subRes);
                 
     }
+    */
 }
 
 /*
