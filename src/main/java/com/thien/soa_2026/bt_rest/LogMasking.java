@@ -67,6 +67,18 @@ public class LogMasking {
         Gson gson = new Gson();
         ResponseDTO res = gson.fromJson(body, ResponseDTO.class);
         
+        String ans = res.getData().replaceAll("user=\\S+", "user=[EMAIL]")
+                .replaceAll("phone=\\S+", "phone=[PHONE]")
+                .replaceAll("token=\\S+", "token=[TOKEN]");
         
+        SubmitDTO sub = new SubmitDTO(sCode, qCode, res.getRequestId(), ans);
+        
+        HttpRequest postReq = HttpRequest.newBuilder()
+                .uri(URI.create(url + "/submit"))
+                .POST(HttpRequest.BodyPublishers.ofString(gson.toJson(sub)))
+                .build();
+        
+        HttpResponse<String> postRes = client.send(postReq, HttpResponse.BodyHandlers.ofString());
+        System.out.println(">>>>> " + postRes.body());
     }
 }
