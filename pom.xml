@@ -43,6 +43,14 @@
             <version>${grpc.version}</version>
         </dependency>   
 
+        <!-- Bắt buộc cho gRPC stub compile trên JDK 9+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        -->
+
     </dependencies>
     
     <build>
